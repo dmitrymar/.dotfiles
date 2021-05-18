@@ -3,32 +3,22 @@ if empty(glob('~/.vim/autoload/plug.vim'))
         \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-call plug#begin('~/.vim/plugged')
 
-" Syntax and language specific
+call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-git'
 Plug 'vim-ruby/vim-ruby'
 Plug 'othree/html5.vim'
 Plug 'leshill/vim-json'
 Plug 'tpope/vim-markdown'
 Plug 'ElmCast/elm-vim'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'peitalin/vim-jsx-typescript', { 'for': 'typescript' }
-" Plug 'elixir-lang/vim-elixir', { 'for': 'elixir' }
-" Plug 'slashmili/alchemist.vim', { 'for': 'elixir' }
-" Plug 'Quramy/tsuquyomi', { 'for': 'typescript' }
 Plug 'pangloss/vim-javascript'
-" Plug 'isRuslan/vim-es6'
 Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'tpope/vim-sleuth'
-" Plug 'flowtype/vim-flow', { 'for': 'javascript' }
 Plug 'tweekmonster/django-plus.vim'
-Plug 'jparise/vim-graphql'
 
-" Actual Plugs
 Plug 'vimlab/split-term.vim'
 Plug 'tpope/vim-surround'
 Plug 'christoomey/vim-tmux-navigator'
@@ -52,7 +42,6 @@ Plug 'junegunn/goyo.vim', { 'for': 'markdown' }
 Plug 'janko-m/vim-test'
 Plug 'tpope/vim-endwise'
 Plug 'mattn/emmet-vim'
-Plug 'embear/vim-localvimrc'
 Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'NLKNguyen/papercolor-theme'
