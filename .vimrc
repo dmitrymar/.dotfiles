@@ -15,6 +15,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'cakebaker/scss-syntax.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-scripts/indentpython.vim', { 'for': 'python' }
 Plug 'tpope/vim-sleuth'
 Plug 'tweekmonster/django-plus.vim'
@@ -113,7 +114,7 @@ set statusline+=%=
 set statusline+=\%l
 
 " assume the /g flag on :s substitutions to replace all matches in a line
-set gdefault
+" set gdefault
 
 set autoread
 
@@ -146,6 +147,8 @@ autocmd FileType markdown setlocal shiftwidth=4 softtabstop=4 tabstop=4 wrap lin
 autocmd FileType elm setlocal shiftwidth=4 softtabstop=4 tabstop=4
 
 set laststatus=2
+
+set colorcolumn=65
 
 set linebreak
 
@@ -293,3 +296,4 @@ let g:user_emmet_settings = {
 \}
 
 let g:localvimrc_persistent = 2
+
